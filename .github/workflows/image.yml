@@ -23,7 +23,7 @@ jobs:
     - name: Build and push
       run: |
         docker buildx build --push -t freediy/jdsign:latest -f Dockerfile .
-        
+
     - name: Cleanup
       run: |
         docker context use default
